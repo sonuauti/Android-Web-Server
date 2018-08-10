@@ -54,5 +54,5 @@ This is standalone, multithreaded, almost or No dependancy ! http server in Java
   
   
     Design, Build, Tested by
-    @github/sonuauti
+    twitter,github @sonuauti
     
