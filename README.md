@@ -1,8 +1,21 @@
 # Android Web Server (FireFly)
-Simple and Low footprint TCP/IP Web Server for Android in Java
+Simple and Small footprint TCP/IP Web Server for Android in Java
 
 This is standalone, multithreaded, almost or No dependancy ! http server in Java with example use in Android.
 
+Features supported
+- Support basic GET, POST requests
+- Render html files
+- Render jpeg,png,gif
+- Custom api for dynamic web pages (mvc)
+- Support javascript rendring
+- Multithreaded, support mulitple client
+
+What it does not do?
+- File upload, video rendering
+
+
+# Getting Started
 ## How to use it in Android?
 
 1.  Copy TinyWebServer.java class from src dir to your android project package
