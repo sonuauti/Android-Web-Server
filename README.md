@@ -38,7 +38,7 @@ This is standalone, multithreaded, almost or No dependancy ! http server in Java
    - localhost or your device ip address
    - helloworld is api method inside AppApis.java
    
-   
+   ![Demo ScreenShot](https://github.com/sonuauti/Android-Web-Server/blob/master/demo.png)
   
   
     Design, Build, Tested by
