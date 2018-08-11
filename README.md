@@ -67,6 +67,5 @@ What it does not do?
   
   
    Design, Build, Tested by   
-   ![twitter](https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-512.png)  
-   ![github](https://cdn1.iconfinder.com/data/icons/logotypes/32/github-512.png) /@sonuauti
+    twitter , github /@sonuauti
     
