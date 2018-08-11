@@ -67,5 +67,5 @@ What it does not do?
   
   
     Design, Build, Tested by
-    twitter,github @sonuauti
+    ![twitter](https://help.twitter.com/content/dam/help-twitter/twitter_logo_blue.png)  ![github](https://avatars0.githubusercontent.com/u/9919?s=280&v=4) /@sonuauti
     
