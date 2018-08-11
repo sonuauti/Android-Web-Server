@@ -53,7 +53,7 @@ What it does not do?
     }
     ```
     
-    you can access this api -> http://localhost/myfirstapi
+    you can access this api -> http://localhost:9000/myfirstapi
     
     
 
@@ -66,6 +66,7 @@ What it does not do?
    ![Demo ScreenShot](https://github.com/sonuauti/Android-Web-Server/blob/master/demo.png)
   
   
-    Design, Build, Tested by
-    ![twitter](https://help.twitter.com/content/dam/help-twitter/twitter_logo_blue.png)  ![github](https://avatars0.githubusercontent.com/u/9919?s=280&v=4) /@sonuauti
+   Design, Build, Tested by   
+   ![twitter](https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-512.png)  
+   ![github](https://cdn1.iconfinder.com/data/icons/logotypes/32/github-512.png) /@sonuauti
     
