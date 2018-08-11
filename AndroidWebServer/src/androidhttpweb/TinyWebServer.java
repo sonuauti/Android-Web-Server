@@ -151,6 +151,7 @@ public class TinyWebServer extends Thread {
     public static String SERVER_IP="localhost";
     public static int SERVER_PORT=9000;
     public static boolean isStart=true;
+    public static String INDEX_FILE_NAME="index.html";
     
 
     public TinyWebServer(final String ip, final int port) throws IOException {
@@ -281,7 +282,7 @@ public class TinyWebServer extends Thread {
             case "/":
                 //root location, server index file
                 CONTENT_TYPE = "text/html";
-                data=readFile(WEB_DIR_PATH+"/index.php");
+                data=readFile(WEB_DIR_PATH+"/"+INDEX_FILE_NAME);
                 constructHeader(out, data.length() + "", data);
                 break;
             default:
@@ -528,6 +529,7 @@ public class TinyWebServer extends Thread {
             }
         }catch(Exception er){
             pageNotFound();
+            return "";
         }
         return content;
     }
@@ -538,6 +540,7 @@ public class TinyWebServer extends Thread {
         SERVER_IP=ip;
         SERVER_PORT=port;
         WEB_DIR_PATH=public_dir;
+        scanFileDirectory();
         
     }
     
@@ -568,7 +571,31 @@ public class TinyWebServer extends Thread {
         }
     }
     
-    /*//use for testing
+    
+    //scan for index file
+    public static void scanFileDirectory(){
+        boolean isIndexFound=false;
+        try{
+            File file=new File(WEB_DIR_PATH);
+            if(file.isDirectory()){
+                File[] allFiles=file.listFiles();
+                for (File allFile : allFiles) {
+                    //System.out.println(allFile.getName().split("\\.")[0]);
+                    if(allFile.getName().split("\\.")[0].equalsIgnoreCase("index")){
+                        TinyWebServer.INDEX_FILE_NAME=allFile.getName();
+                        isIndexFound=true;
+                    }
+                }
+            }
+            
+        }catch(Exception er){}
+        
+        if(!isIndexFound){
+            System.out.println("Index file not found !");
+        }
+    }
+    
+   /* //use for testing
     public static void main(String[] args) {
         try {
 
