@@ -41,9 +41,13 @@ What it does not do?
 
 ## How to write custom api? 
 
-1.  Copy AppApis.java from src directory
-2.  keep the package name same for AppApis.java like "appapis.queryfiles" 
-3.  open AppApis.java and write your own mehtod/function inside AppApis.java 
+1.  Add the follow permission to your manifest file
+    ```java
+    <uses-permission android:name="android.permission.INTERNET"/>
+    ```
+2.  Copy AppApis.java from src directory
+3.  keep the package name same for AppApis.java like "appapis.queryfiles" 
+4.  open AppApis.java and write your own mehtod/function inside AppApis.java 
     for example,
 
     ```java
